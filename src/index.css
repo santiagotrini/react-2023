@@ -20,6 +20,24 @@ table, th, td {
   padding: 5px;
 }
 
+.pokemon-card {
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 3px 3px gray;
+}
+
+.pokemon-card h1 {
+  margin-top: 5px;
+}
+
+.pokemon-card img {
+  width: 150px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

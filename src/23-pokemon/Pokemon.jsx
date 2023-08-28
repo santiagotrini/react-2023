@@ -48,16 +48,20 @@ function Pokemon(props) {
   }
 
   return (
-    <div>
+    <>
       <input
         onChange={handleChange} 
         value={pokemon} 
         type="text"  
       />
+      <div className="pokemon-card">
+      
       <h1>{pokemonInfo.name}</h1>
-      <p>{pokemonInfo.id}</p>
+      <p>id: {pokemonInfo.id}</p>
       <img src={pokemonInfo.img} />  
     </div>
+    </>
+    
   ); 
 }
 
