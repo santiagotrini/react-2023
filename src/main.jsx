@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Clock from './18-clock/Clock'
 import Stopwatch from './19-stopwatch/Stopwatch'
+import Random from './15-random/Random'
 import './index.css'
 import {
   createBrowserRouter,
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/stopwatch',
     element: <Stopwatch />
+  },
+  {
+    path: '/random',
+    element: <Random />
   },
 ]);
 

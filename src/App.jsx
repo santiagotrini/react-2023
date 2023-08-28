@@ -6,6 +6,7 @@ function App() {
     <>
       <button><a href="/clock">Reloj</a></button>
       <button><a href="/stopwatch">Cronometro</a></button>
+      <button><a href="/random">Random</a></button>
     </>
   )
 }
