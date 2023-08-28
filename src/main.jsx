@@ -4,6 +4,10 @@ import App from './App.jsx'
 import Clock from './18-clock/Clock'
 import Stopwatch from './19-stopwatch/Stopwatch'
 import Random from './15-random/Random'
+import Tabla from './21-tabla/Tabla';
+import Pokemon from './23-pokemon/Pokemon';
+import Contador from './31-contador/Contador';
+import datos from './datos';
 import './index.css'
 import {
   createBrowserRouter,
@@ -27,6 +31,18 @@ const router = createBrowserRouter([
     path: '/random',
     element: <Random />
   },
+  {
+    path: '/tabla',
+    element: <Tabla datos={datos} />
+  },
+  {
+    path: '/pokemon',
+    element: <Pokemon />
+  },
+  {
+    path: '/contador',
+    element: <Contador />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
