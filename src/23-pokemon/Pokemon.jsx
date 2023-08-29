@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react';
 
 function Pokemon(props) {
 
+
     useEffect(() => {
         fetch(url)
         .then(res => res.json())
         .then(data => {
             // console.log(data.results);
+            // console.log('adentro del useEffect');
             setData(data.results);
         });
         }, []);  
@@ -26,7 +28,9 @@ function Pokemon(props) {
 
   function handleChange(e) {
     setPokemon(e.target.value);
+    // console.log(e.target);
     let filteredArray = data.filter(el => el.name === e.target.value);
+    console.log(filteredArray);
     if (filteredArray.length > 0) {
       
       let pokemonUrl = filteredArray[0].url;
@@ -40,7 +44,7 @@ function Pokemon(props) {
           };
 
           setPokemonInfo(newPokemonInfo);
-        })
+        });
       
     }
 

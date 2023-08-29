@@ -1,13 +1,13 @@
 const questions = [
   {
     id: 1,
-    question: '2 + 2?',
+    question: '2 + 2?',   // questions[0].question
     answers: ['1','2','3','4'],
-    correct: '4'
+    correct: '4'   // questions[0].correct
   },
   {
     id: 2,
-    question: '4 + 2?',
+    question: '4 + 2?',  // questions[1].question
     answers: ['13','5','6','4'],
     correct: '6'
   },

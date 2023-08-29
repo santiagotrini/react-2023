@@ -5,6 +5,7 @@ import Random from './15-random/Random'
 import Clock from './18-clock/Clock'
 import Stopwatch from './19-stopwatch/Stopwatch'
 import Tabla from './21-tabla/Tabla';
+import Futbol from './22-futbol/Futbol';
 import Pokemon from './23-pokemon/Pokemon';
 import Todos from './25-todos/Todos';
 import Blog from './27-blog/Blog';
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
   {
     path: '/trivia',
     element: <Trivia />
+  },
+  {
+    path: '/futbol',
+    element: <Futbol />
   },
 ]);
 

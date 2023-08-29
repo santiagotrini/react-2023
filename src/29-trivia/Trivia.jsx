@@ -23,6 +23,7 @@ const Trivia = props => {
 
 const Game = props => {
   const [idx, setIdx] = useState(0);
+  const { setGameOver, questions, count, setCount } = props;  
   
   const handleClick = e => {
     if (e.target.textContent === questions[idx].correct) {
@@ -41,7 +42,6 @@ const Game = props => {
       }                            
     }, 1000);
   };
-  const { setGameOver, questions, count, setCount } = props;  
   return (
     <>
       <h2>{count}/{questions.length}</h2>
