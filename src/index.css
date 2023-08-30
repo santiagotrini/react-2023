@@ -32,6 +32,35 @@ table, th, td {
   background: firebrick;
 }
 
+
+.cuadradito:checked + label {
+  text-decoration: line-through;
+}
+
+.newTask input {
+  margin: 10px;
+}
+
+.task-list {
+  font-size: 20px;
+  list-style-type: none;
+  
+}
+
+.task-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.task-list button {
+  /* font-size: 10px; */
+  padding: 2px;
+  border: none;
+  background: transparent;
+}
+
 .pokemon-card {
   border: 1px solid black;
   border-radius: 5%;

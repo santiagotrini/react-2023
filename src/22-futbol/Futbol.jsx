@@ -9,6 +9,11 @@ function Futbol(props) {
     'San Lorenzo',
     'Zaracho FC',
     'Jorge Newbery',
+    'Racing',
+    'Racing de Cordoba',
+    'Estudiantes de Caseros',
+    'Independiente del Valle',
+    'Almagro',
     'Zaracho FC Filial Asuncion'
   ];
 
@@ -18,14 +23,21 @@ function Futbol(props) {
   
   
   const handleChange = e => {
-    setBusqueda(e.target.value);
-    let array = equipos.filter(cosa => cosa === e.target.value);
+    // console.log(e.target);
+    setBusqueda(e.target.value); // componentes controlados
+    let array = equipos.filter(cosa => {
+      let s1 = cosa.toLowerCase();
+      let s2 = e.target.value.toLowerCase();
+      if (s1.startsWith(s2)) return s1;
+      else                   return null;
+    });
     setLista(array);
   };
 
 
   return (
     <>
+      <h2>Filtrá usando este input</h2>
       <input 
         type="text"
         value={busqueda}
