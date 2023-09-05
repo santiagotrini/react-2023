@@ -15,6 +15,10 @@ function App() {
       <button><a href="/trivia">Trivia</a></button>
       <button><a href="/contador">Contador</a></button>
       <button><a href="/futbol">Futbol</a></button>
+      <button><a href="/galeria">Galeria</a></button>
+      <button><a href="/toggle">Render condicional</a></button>
+      <button><a href="/countdown">Cuenta regresiva</a></button>
+      <button><a href="/unform">Un formulario</a></button>
     </>
   )
 }

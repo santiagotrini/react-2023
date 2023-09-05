@@ -8,10 +8,14 @@ import Tabla from './21-tabla/Tabla';
 import Futbol from './22-futbol/Futbol';
 import Pokemon from './23-pokemon/Pokemon';
 import Todos from './25-todos/Todos';
+import Galeria from './26-unsplash/Galeria';
 import Blog from './27-blog/Blog';
 import Ciphers from './28-ciphers/Ciphers';
 import Trivia from './29-trivia/Trivia';
 import Contador from './31-contador/Contador';
+import Toggle from './32-render-condicional/Toggle';
+import Countdown from './33-countdown/Countdown';
+import Unform from './42-unform/Unform';
 import datos from './datos';
 import './index.css'
 import {
@@ -68,6 +72,22 @@ const router = createBrowserRouter([
     path: '/futbol',
     element: <Futbol />
   },
+  {
+    path: '/toggle',
+    element: <Toggle />
+  },
+  {
+    path: '/galeria',
+    element: <Galeria />
+  },
+  {
+    path: '/countdown',
+    element: <Countdown />
+  },
+  {
+    path: '/unform',
+    element: <Unform />
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -75,3 +95,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+
+
+
+
+

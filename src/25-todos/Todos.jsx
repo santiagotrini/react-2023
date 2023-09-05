@@ -18,6 +18,11 @@ const Todos = props => {
     setTareas(array);
   }
 
+  function handleChange(event) {
+    console.log(event.target.value); 
+    setNuevaTarea(event.target.value);
+  }
+
   return (
     <>
       <h1>Lista de tareas</h1>
@@ -25,7 +30,7 @@ const Todos = props => {
         <input  
           type="text" 
           value={nuevaTarea}
-          onChange={e => setNuevaTarea(e.target.value)}
+          onChange={handleChange}
         />
         <input type="submit" value="Guardar" />
       </form>
