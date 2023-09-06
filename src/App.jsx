@@ -19,6 +19,7 @@ function App() {
       <button><a href="/toggle">Render condicional</a></button>
       <button><a href="/countdown">Cuenta regresiva</a></button>
       <button><a href="/unform">Un formulario</a></button>
+      <button><a href="/navbar">Navbar</a></button>
     </>
   )
 }

@@ -15,8 +15,8 @@ function Unform(props) {
     setPassword(event.target.value);
   }
   function handleSubmit(event) {
-    console.log('hola enviado');
     event.preventDefault();  // no refresh
+    console.log('hola enviado');
     alert(user + ' ' + password);  // el alert
     console.log(user + ' ' + password);
     setUser('');

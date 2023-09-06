@@ -16,8 +16,16 @@ import Contador from './31-contador/Contador';
 import Toggle from './32-render-condicional/Toggle';
 import Countdown from './33-countdown/Countdown';
 import Unform from './42-unform/Unform';
+import Navbar from './14-navbar/Navbar';
 import datos from './datos';
-import './index.css'
+import './index.css';
+
+const links = [
+  {name: 'About', url: 'about.html'},
+  {name: 'Home', url: 'home.html'},
+  {name: 'Contact', url: 'contact.html'}
+];
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -87,6 +95,10 @@ const router = createBrowserRouter([
   {
     path: '/unform',
     element: <Unform />
+  },
+  {
+    path: '/navbar',
+    element: <Navbar links={links} />
   },
 ]);
 
